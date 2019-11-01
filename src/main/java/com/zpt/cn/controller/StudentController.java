@@ -14,6 +14,7 @@ import java.util.List;
  * @Date: 2019-10-31 11:56
  **/
 @RestController
+@CrossOrigin
 //@RequestMapping("/student")
 public class StudentController {
 

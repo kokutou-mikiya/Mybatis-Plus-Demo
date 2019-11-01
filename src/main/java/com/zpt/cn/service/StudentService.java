@@ -89,7 +89,7 @@ public class StudentService {
     /*
         mybatis-plus自带的分页
         第一步：在springboot主配置类中添加组件
-        第二步：实现IPage的Page方法
+        第二步：如下：实现IPage的Page方法
      */
     public List<Student> mybatisPage(){
         IPage page = new Page(0,5);
@@ -97,6 +97,7 @@ public class StudentService {
         queryWrapper.orderByDesc("age");    //按年龄降序
         List<Student> students = studentMapper.selectList(queryWrapper);
         return students;
+        //分页信息
 //        IPage pageInfo = studentMapper.selectPage(page,queryWrapper);
 //        long total = pageInfo.getTotal();
 //        long size = pageInfo.getSize();

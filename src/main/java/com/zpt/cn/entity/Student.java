@@ -16,8 +16,8 @@ import java.util.Date;
  * @Date: 2019-10-31 11:54
  **/
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
+@AllArgsConstructor //有参构造
+@NoArgsConstructor  //无参构造
 @Builder
 @TableName(value = "student")   //mybatis-plus表名注解
 public class Student {
